@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaArrowRight } from "react-icons/fa6";
 
 function InfoContainer(props) {
   const [hovered, setHovered] = React.useState(false);
@@ -16,28 +17,28 @@ function InfoContainer(props) {
 
   return (
     <div
-      className="bg-gray-800 text-white rounded-lg border-2 border-white p-4 flex flex-col items-center justify-center"
+      className="bg-gray-800 text-white rounded-lg border-2 border-white p-4 flex flex-col items-center justify-center w-1/3"
       style={{ backgroundColor, borderColor, transition: 'all 0.3s ease-in-out' }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <img src={props.image} alt={props.title} className="w-16 h-16 mb-4" />
-      <h1 className="text-2xl font-bold">{props.title}</h1>
-      <h2 className="text-lg">{props.subtitle}</h2>
+      <h1 className="text-2xl  lg:text-3xl font-bold">{props.title}</h1>
+      <h2 className="text-lg ">{props.subtitle}</h2>
     </div>
   );
 }
 
 function InfoSection(props) {
   return (
-    <div className="relative">
-      <h1 className="text-white text-4xl">{props.sectionTitle}</h1>
+    <div className="relative bg-gray-600 px-6 py-6 rounded-md border-black">
+      <h1 className="text-white text-4xl py-5">{props.sectionTitle}</h1>
       <div className="flex space-x-3">
         {props.infoData.map((info, index) => (
           <InfoContainer key={index} title={info.title} subtitle={info.subtitle} image={info.image} />
         ))}
       </div>
-      <a href="#" className="text-gray-200 m-4">Show more...</a>
+      <a href="#" className="text-gray-200">Show more...</a>
     </div>
   );
 }
