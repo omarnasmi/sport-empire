@@ -4,7 +4,7 @@ import Discover from './Discover'
 function Home() {
   return (
     <div>
-        {/* <Welcome></Welcome> */}
+        <Welcome></Welcome> 
         <Discover></Discover>
     </div>
   )

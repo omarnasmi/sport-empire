@@ -43,23 +43,27 @@ function InfoSection(props) {
   );
 }
 
+function Footer() { return (
+
+    <footer className="bg-gray-800 text-white py-8"> <div className="container mx-auto flex justify-between items-center"> <div> <p>&copy; {new Date().getFullYear()} My Fitness Site. All rights reserved.</p> </div> <div> <ul className="flex space-x-4"> <li> <a href="#" className="hover:underline">Privacy Policy</a> </li> <li> <a href="#" className="hover:underline">Terms of Service</a> </li> <li> <a href="#" className="hover:underline">Contact Us</a> </li> </ul> </div> </div> </footer> ); }
+
 function Discover() {
   // Define data for each InfoSection
   const sectionsData = [
     {
       sectionTitle: 'See our latest articles',
       infoData: [
-        { title: 'Calorie Calculator', subtitle: 'Calculate your daily calorie needs', image: '/src/assets/react.svg' },
+        { title: 'Guide to cutting', subtitle: 'Calculate your daily calorie needs', image: '/src/assets/react.svg' },
         { title: 'Fat loss article', subtitle: 'Learn how to lose fat effectively', image: '/src/assets/react.svg' },
-        { title: 'Full body workout', subtitle: 'Get a full body workout in just 30 minutes', image: '/src/assets/react.svg' }
+        { title: 'Best Post-workout meals', subtitle: 'Get a full body workout in just 30 minutes', image: '/src/assets/react.svg' }
       ]
     },
     {
         sectionTitle: 'See our latest Workouts',
         infoData: [
-          { title: 'Calorie Calculator', subtitle: 'Calculate your daily calorie needs', image: '/src/assets/react.svg' },
-          { title: 'Fat loss article', subtitle: 'Learn how to lose fat effectively', image: '/src/assets/react.svg' },
-          { title: 'Full body workout', subtitle: 'Get a full body workout in just 30 minutes', image: '/src/assets/react.svg' }
+            { title: 'Calorie Calculator', subtitle: 'Calculate your daily calorie needs', image: '/src/assets/calories.png' },
+            { title: 'Fat loss article', subtitle: 'Learn how to lose fat effectively', image: '/src/assets/fat-loss.png' },
+            { title: 'Full body workout', subtitle: 'Get a full body workout in just 30 minutes', image: '/src/assets/muscle.png' }
         ]
       },
       {
@@ -79,6 +83,8 @@ function Discover() {
       ))}
     </div>
   );
+  
 }
 
 export default Discover;
+
