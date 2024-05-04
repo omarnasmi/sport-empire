@@ -2,23 +2,22 @@ import React from 'react'
 
 function Welcome() {
   return (
-    <div className='flex-auto'>
-      <div className='flex'>
-        <div className='justify-center'>
-          <div className='absolute'>
-            <h1 className=" text-3xl text-white font-bold absolute text-nowrap ">Build your Empire</h1>
-          </div>
-          <div className='relative'>
-            <img width={"70%"} className='' src="\src\assets\gym-guy-back.png" alt="" />
-          </div>
-        </div>
+    
+<div className='flex-auto py-4 mb-10 bg-gradient-to-r from-black to-gray-800'>
 
-        <div>
-          <p className='text-white text-4xl'>Boost your power</p>
-          <h2 className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, culpa. Et velit perspiciatis ut quia dignissimos doloremque eligendi, dicta iusto!</h2>
-        </div>
-      </div>
+  <div className='flex items-top'>
+    <div className='rounded bg-gradient-to-r from-black to-gray-900  py-1 px-1 mr-4 '>
+      <img className='' src="\src\assets\Build your empire.gif " alt="Build your empire" />
     </div>
+    <div className='flex flex-col justify-top '>
+      <p className='text-white text-4xl mb-2 archivo-black-regular'>BOOST YOUR POWER</p>
+      <h2 className='text-white text-center text-lg px-4'>Join our platform to improve your physique</h2>
+      <button className='bg-green-800 text-white py-1 px-1 rounded-md ml-10 h-10'><a href="">Discover</a></button>
+    </div>
+    
+  </div>
+</div>
+
 
   )
 }
